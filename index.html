@@ -68,21 +68,32 @@
             <br><br>
     <hr> -->
     <hr>
-    <center>
-    <img src="images/teaser.png" width="60%">
-    </center>
+    <table class="table table-striped table-bordered">
+        <tr>
+            <td>
+                <center>
+                    <h4>Abstract</h4>
+
+                </center>
+                <p style="text-align:justify;">Contextual information is a valuable cue for Deep Neural Networks (DNNs) to learn better representations and improve accuracy. 
+                However, co-occurrence bias in the training dataset may hamper a DNN model's generalizability to unseen scenarios in the real world. For example, in COCO, many object categories have a much higher co-occurrence with men compared to women, which can bias a DNN's prediction in favor of men. 
+                Recent works have focused on task-specific training strategies to handle bias in such scenarios, but fixing the available data is often ignored. In this paper, we propose a novel and more generic solution to address the contextual bias in the datasets by selecting a subset of the samples, 
+                which is fair in terms of the co-occurrence with various classes for a protected attribute. 
+                We introduce a data repair algorithm using the coefficient of variation, which can curate fair and contextually balanced data for a protected class(es). 
+                This helps in training a fair model irrespective of the task, architecture or training methodology. Our proposed solution is simple, effective and can even be used in an active learning setting where the data labels are not present or being generated incrementally. 
+                We demonstrate the effectiveness of our algorithm for the task of object detection and multi-label image classification across different datasets. 
+                Through a series of experiments, we validate that curating contextually fair data helps make model predictions fair by balancing the true positive rate for the protected class across groups without compromising on the model's overall performance.
+                </p>
+            </td>
+            <td>
+                <br>
+                <br>
+                <img src="images/teaser.png" width="650" height="680">
+            </td>
+        </tr>
+    </table>
     <hr>
-    <h4>Abstract</h4>
-    Contextual information is a valuable cue for Deep Neural Networks (DNNs) to learn better representations and improve accuracy. 
-    However, co-occurrence bias in the training dataset may hamper a DNN model's generalizability to unseen scenarios in the real world. For example, in COCO, many object categories have a much higher co-occurrence with men compared to women, which can bias a DNN's prediction in favor of men. 
-    Recent works have focused on task-specific training strategies to handle bias in such scenarios, but fixing the available data is often ignored. In this paper, we propose a novel and more generic solution to address the contextual bias in the datasets by selecting a subset of the samples, 
-    which is fair in terms of the co-occurrence with various classes for a protected attribute. 
-    We introduce a data repair algorithm using the coefficient of variation, which can curate fair and contextually balanced data for a protected class(es). 
-    This helps in training a fair model irrespective of the task, architecture or training methodology. Our proposed solution is simple, effective and can even be used in an active learning setting where the data labels are not present or being generated incrementally. 
-    We demonstrate the effectiveness of our algorithm for the task of object detection and multi-label image classification across different datasets. 
-    Through a series of experiments, we validate that curating contextually fair data helps make model predictions fair by balancing the true positive rate for the protected class across groups without compromising on the model's overall performance. 
-    <hr>
-            <h4>Plots/Figures</h4>
+            <center><h4>Plots/Figures</h4></center>
             <br>
 
 
@@ -199,15 +210,33 @@
             <br><br> -->
             <hr>
 
-            <h4> Qualitative results </h4>
+            <!-- <h4> Qualitative results </h4> -->
             <table class="table table-striped table-bordered">
                 <caption>
-                    Detection of <code>CUP</code>  class by different Active Learning techniques on Dollar Street and ObjectNet dataset. 
-                    Green box denotes predicted bounding box of <code>CUP</code> when model was trained using only <code>20%</code> of training data.
                 </caption>
+                
                 <tr>
                     <td>
-                        <img align="center" src="images/dollar_street_cup.png" width="100%">
+                        <center>
+                            <h4>Qualitative Results</h4>
+
+                        </center>
+                        <img align="center" src="images/dollar_street_cup.png" width="500" height="250">
+                        <div>Detection of <code>CUP</code>  class by different Active Learning techniques on Dollar Street and ObjectNet dataset. 
+                        Green box denotes predicted bounding box of <code>CUP</code> when model was trained using only <code>20%</code> of training data.</div>
+        
+                    </td>
+
+                    <td>
+                        <center>
+                            <h4>Quantitative Results</h4>
+
+                        </center>
+                        <img align="center" src="images/WACV_Quant_Results.png" width="500" height="250">
+                
+                        <div>We compare the average precision of detecting <code>CUP</code> on <strong>OpenImages</strong> dataset when model was trained on <code>CUP</code> images from COCO 
+                        dataset by different methods in supervised and active learning setting.</div>
+
                     </td>
                 </tr>
             </table>
