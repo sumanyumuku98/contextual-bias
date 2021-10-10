@@ -30,30 +30,45 @@
     display: inline;
 } -->
 <br>
-<div class="container">
 
-    <center>
-    <!-- <img style="display: inline;" src="images/iitd_logo.png" width="100" height="100" align="left"> -->
+        <div class="container">
+            <table>
+            <tr>
+            <td>
+                <img src="images/iitd_logo.png" width="180" height="180" align="center">
+            </td>
+            <td>
 
-    <h2>
-        Does Data Repair Lead to Fair Models? 
-    </h2>
-    <h2>
-        Curating Contextually Fair Data To Reduce Model Bias
-    </h2>
+            <center>
+            <!-- <img style="display: inline;" src="images/iitd_logo.png" width="100" height="100" align="left"> -->
+        
+            <h2>
+                Does Data Repair Lead to Fair Models? 
+            </h2>
+            <h2>
+                Curating Contextually Fair Data To Reduce Model Bias
+            </h2>
+        
+            <!-- <img style="display: inline;" src="images/iiitd_logo.jpg" width="100" height="100" align="right"> -->
+        
+            <h5 style="color: #9A2617">Sharat Agarwal<sup>1*</sup>&ensp;   Sumanyu Muku<sup>2*</sup>&ensp;    Chetan Arora<sup>2</sup>&ensp;    Saket Anand<sup>1</sup></h5>
+                <div style="color: gray"><sup>1</sup><a href="https://www.iiitd.ac.in/">IIIT Delhi</a>, <sup>2</sup><a href="https://home.iitd.ac.in/">IIT Delhi</a>, *equal contribution</div>
+                <div><a href="dummy/paper.html" style="color:#FF0000;">[Paper]</a> <a href="https://github.com/sumanyumuku98/contextual-bias" style="color:#FF0000;">[Code]</a></div>
+                <br>
+                <h6>
+                In IEEE Winter Conference on Applications of Computer Vision (<a href="https://wacv2022.thecvf.com/home">WACV</a>), 2022
+        
+            </h6>
+        
+            </center>
+            </td>
+            <td>
+                <img src="images/iiitd_logo2.jpg" width="180" height="180" align="center">
 
-    <!-- <img style="display: inline;" src="images/iiitd_logo.jpg" width="100" height="100" align="right"> -->
+            </td>
 
-    <h5 style="color: #9A2617">Sharat Agarwal<sup>1*</sup>&ensp;   Sumanyu Muku<sup>2*</sup>&ensp;    Chetan Arora<sup>2</sup>&ensp;    Saket Anand<sup>1</sup></h5>
-        <div style="color: gray"><sup>1</sup><a href="https://www.iiitd.ac.in/">IIIT Delhi</a>, <sup>2</sup><a href="https://home.iitd.ac.in/">IIT Delhi</a>, *equal contribution</div>
-        <div><a href="dummy/paper.html" style="color:#FF0000;">[Paper]</a> <a href="https://github.com/sumanyumuku98/contextual-bias" style="color:#FF0000;">[Code]</a></div>
-        <br>
-        <h6>
-        In IEEE Winter Conference on Applications of Computer Vision (<a href="https://wacv2022.thecvf.com/home">WACV</a>), 2022
-
-    </h6>
-
-    </center>
+            </tr>   
+            </table>
 
 
     <!-- <hr>
@@ -78,8 +93,7 @@
                 <p style="text-align:justify;">Contextual information is a valuable cue for Deep Neural Networks (DNNs) to learn better representations and improve accuracy. 
                 However, co-occurrence bias in the training dataset may hamper a DNN model's generalizability to unseen scenarios in the real world. For example, in COCO, many object categories have a much higher co-occurrence with men compared to women, which can bias a DNN's prediction in favor of men. 
                 Recent works have focused on task-specific training strategies to handle bias in such scenarios, but fixing the available data is often ignored. In this paper, we propose a novel and more generic solution to address the contextual bias in the datasets by selecting a subset of the samples, 
-                which is fair in terms of the co-occurrence with various classes for a protected attribute. 
-                We introduce a data repair algorithm using the coefficient of variation, which can curate fair and contextually balanced data for a protected class(es). 
+                which is fair in terms of the co-occurrence with various classes for a protected attribute. We introduce a data repair algorithm using the coefficient of variation, which can curate fair and contextually balanced data for a protected class(es). 
                 This helps in training a fair model irrespective of the task, architecture or training methodology. Our proposed solution is simple, effective and can even be used in an active learning setting where the data labels are not present or being generated incrementally. 
                 We demonstrate the effectiveness of our algorithm for the task of object detection and multi-label image classification across different datasets. 
                 Through a series of experiments, we validate that curating contextually fair data helps make model predictions fair by balancing the true positive rate for the protected class across groups without compromising on the model's overall performance.
@@ -88,7 +102,8 @@
             <td>
                 <br>
                 <br>
-                <img src="images/teaser.png" width="650" height="680">
+                <br>
+                <img src="images/teaser.png" width="660" height="670">
             </td>
         </tr>
     </table>
