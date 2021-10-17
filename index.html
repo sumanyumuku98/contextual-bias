@@ -105,8 +105,16 @@
             <td>
                 <br>
                 <br>
-                <br>
-                <img src="images/teaser.png" width="660" height="670">
+                <center>
+                <img src="images/teaser.png" width="660" height="680">
+                <div style="text-align:justify;">
+                    Bar plots in the left shows the count of men (<p style="color: blue; display:inline">blue</p>) and women (<p style="color: red; display:inline">red</p>) for different sports objects in <code>COCO</code> dataset. 
+                    We propose to curate a fair data for a protected class (gender in this case) across its co-occurring classes. 
+                    As a result, the women which were detected as men with skis, tennis and surfboard in the middle column are now detected 
+                    as women with high confidence in the right column, with only 20% of the training data. The left-middle and left-bottom plots 
+                    show the co-occurrence frequency after selecting a subset using <code>Repair</code>, and our technique respectively.
+                </div>
+                </center>
             </td>
         </tr>
     </table>
