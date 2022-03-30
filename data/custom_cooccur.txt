@@ -1,0 +1,5 @@
+truck
+umbrella
+refrigerator
+handbag
+train
