@@ -28,7 +28,7 @@ Generate a barplot for the protected attribute/class w.r.t other co-occuring cla
 python genPlt.py --data_mode train --bias_class man
 ```
 The above example generates co-occuring distribution for `man`. The generated barplots will be saved in `out_figures`.
-## Curating Fair Data
+## Curating Contextually Fair Data
 To curate contextually fair data for a protected attribute and fixed budget w.r.t to either `topK`, `bottomK` and `custom` co-occuring categories use:
 ```
 python fairSelection.py --data_mode train --bias_class skateboard --budget 500 --k 5 
