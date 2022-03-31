@@ -31,9 +31,9 @@ The above example generates co-occuring distribution for `man`. The generated ba
 ## Curating Contextually Fair Data
 To curate contextually fair data for a protected attribute and fixed budget w.r.t to either `topK`, `bottomK` and `custom` co-occuring categories use:
 ```
-python fairSelection.py --data_mode train --bias_class skateboard --budget 500 --k 5 
+python fairSelection.py --data_mode train --bias_class cup --budget 500 --k 10
 ```
-The above example curates fair data for protected class `skateboard` with a budget of `500` and co-occuring classes being the top `5`. The selected ids are saved in `out_files`.
+The above example curates fair data for protected class `skateboard` with a budget of `500` and co-occuring classes being the top `10`. The selected ids are saved in `out_files`.
 
 ## Citation
 If you find the work useful, do cite:
