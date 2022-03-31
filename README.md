@@ -49,4 +49,4 @@ If you find the work useful, do cite:
 
 ```
 ## Contact
-If there are any questions or concerns feel free to send a message at 'sharata@iiitd.ac.in'
+If there are any questions or concerns feel free to send a message at sharata@iiitd.ac.in
